@@ -1,44 +1,45 @@
 #body{
    background-color: #C5E4E7;
-   /*
-   display: flex;
-   flex-direction: row;
-   justify-items: center; */
-   /* display: grid;
-   grid-column: auto auto; */
+   
 }
- h1{
+
+h1{
     color: #3D6666;
- }
-/* .calc{
-    display: grid;
-    grid-column: auto auto;
-} */
+}
+
 #calc{
     display: flex;
     flex-direction: row;
     justify-items: center;
     align-items: center;
- 
+    margin-left: 20%;
+    margin-top: 10%;
+    padding: 25px;
 }
 
 #calc{
-    height: 50%;
-    width: 75%;
+    height: 45%;
+    width: 55%;
     border: 1px white solid;
-    border-radius: 5%;
+    border-radius: 7%;
     background-color: #ffff;
 }
 
 #bill{
-    height: 400px;
+    height: 350px;
     width: 350px;
 }
+#bill p{
+    color: #5E7A7D;
+    font-size: 16px;
+    font-family: 'Space Mono' ;
+}
+
 #result{
-    /* align-self: flex-end; */
     background-color: #00474B;
     border-radius: 5%;
-    height: 400px;
+    /* margin-left: 18%; */
+    height: 350px;
     width: 350px;
     color: #26C2AE;
     
