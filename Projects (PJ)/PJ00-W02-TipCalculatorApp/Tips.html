@@ -9,40 +9,48 @@
         
         <link rel="stylesheet" href="C:\Users\kyras\OneDrive\Desktop\FED2207-Redux\Projects (PJ)\PJ00-W02-TipCalculatorApp\TipsStyle.css">
         <!-- CSS only -->
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">        
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">     
+        
     </head>
+
     <body id="body">
         <h1>Tip Tip Horray!</h1>
 
         <section id="calc" class="calc">
-           <div id="bill">
+           <div id="bill" class="bill">
                <!--bill amount input buttons for tip % total people input-->
-               <p>Bill</p>
-               <input placeholder="$0" type="number">
-
+               <alt class="alt">Bill</alt>
                <br>
-               <button>5%</button>
-               <button>10%</button>
-               <button>15%</button>
+               <input id="inPut2" class="inPut2" placeholder="$0">
+               
+
+               <div id="bTn">
+                <br>
+                    <alt class="alt">Select tip %</alt>
+                    <br>
+                    <button id="per5">5%</button>
+                    <button id="per10">10%</button>
+                    <button id="per15">15%</button>
+                    <br> 
+                    <button id="per25">25%</button>
+                    <button id="per50">50%</button>
+                    <input id="inPut" placeholder="Custom">
+               </div>
                <br>
-               <button>25%</button>
-               <button>50%</button>
-               <button>Custom</button>
 
-
-               <p>Number of People</p>
-               <input placeholder="0" type="number">
+               <alt class="alt">Number of People</alt>
+               <br>
+               <input id="inPut3" class="inPut2" placeholder="0">
             </div> 
                
             <div id="result">
-                <p><strong>Tip amount</strong> <br> / person </p>
-                <p><strong>Total</strong> <br> / person </p>
-                <button>Reset</button>
-                <!--result shows
-                tip per person
-                bill per person-->
+                <p><strong class="perP">Tip amount</strong><br> / person </p>
+                <p><strong class="perP">Total</strong><br> / person </p>
+                <button class="reset">Reset</button>
             </div>
 
         </section>
+
+        <script src="C:\Users\kyras\OneDrive\Desktop\FED2207-Redux\Projects (PJ)\PJ00-W02-TipCalculatorApp\Tips.js"></script>
     </body>
 </html>
