@@ -1,14 +1,16 @@
+@import url(https://fonts.googleapis.com/css?family=Space+Mono:regular,italic,700,700italic);
+
+/* the calculator as a whole */
 #body{
    background-color: #C5E4E7;
+   font-family: space mono;
    
 }
-
 
 h1{
     color: #3D6666;
     text-align: center;
 }
-
 
 #calc{
     display: flex;
@@ -16,10 +18,9 @@ h1{
     justify-items: center;
     align-items: center;
     margin-left: 20%;
-    margin-top: 10%;
+    margin-top: 5%;
     padding: 25px;
 }
-
 
 #calc{
     height: 45%;
@@ -30,19 +31,19 @@ h1{
 }
 
 
+/* the left side */
 #bill{
     height: 350px;
     width: 350px;
 }
-
-
+/* labels */
 .alt{
     color: #5E7A7D;
     font-size: 16px;
-    font-family: 'Space Mono' ;
+    font-family: space mono;
 }
 
-.bill button{
+.btnTip{
     color: white;
     background-color: #00474B;
     border: 1px  #00474B solid;
@@ -52,27 +53,12 @@ h1{
     margin: 5px;
     font-size: 24px;
 }
-
-.reset{
-    border-radius: 5%;
-    border: 1px #26C2AE solid;
-    background-color: #26C2AE;
-    height: 48px;
-    width: 255px;
-    margin: 5px;
-    font-size: 24px;
-    color: #00474B;
-    margin-top: 40%;
-
+.btnTip:active{
+    background-color: #9FE8DF;
 }
 
 
-
-.perP{
-    color: white;
-}
-
-#inPut{
+#customInPut{
     width: 100px;
     height: 45px;
     text-align: center;
@@ -80,6 +66,9 @@ h1{
     background-color: #e6f3f5;
     border-radius: 5%;
     border: 1px #e6f3f5 solid;
+}
+#customInput:active {
+    outline-color: #9FE8DF;
 }
 
 .inPut2{
@@ -89,6 +78,28 @@ h1{
     width: 328px;
     font-size: 24px;
     margin-left: 10px;
+}
+
+
+/* right side */
+.perP{
+    color: white;
+}
+
+#resetBtn{
+    border-radius: 5%;
+    border: 1px #26C2AE solid;
+    background-color: #26C2AE;
+    height: 45px;
+    width: 255px;
+    margin: 5px;
+    font-size: 24px;
+    color: #00474B;
+    margin-top: 40%;
+}
+#resetBtn:active {
+    background-color: #9FE8DF;
+    border-color: #9FE8DF;
 }
 
 #result{
@@ -101,16 +112,25 @@ h1{
     color: #26C2AE;
 }
 
- @media only screen and (max-width: 600px) {
-       #calc{
+#tipDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+#totalDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+@media only screen and (max-width: 700px) {
+    #calc{
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 90%;
-        margin: 3px;
+        margin-left: 3%;
     }
-
-    
-
 } 

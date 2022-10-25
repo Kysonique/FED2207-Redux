@@ -14,42 +14,57 @@
     </head>
 
     <body id="body">
-        <h1>Tip Tip Horray!</h1>
+        <h1>SPLI</h1>
+            <br> <h1>TTER</h1>
 
-        <section id="calc" class="calc">
-           <div id="bill" class="bill">
+        <div id="calc" class="calc">
+           <section id="bill" class="bill">
                <!--bill amount input buttons for tip % total people input-->
-               <alt class="alt">Bill</alt>
-               <br>
-               <input id="inPut2" class="inPut2" placeholder="$0">
-               
+                <form>
+                    <label for="billAmount" class="alt">Bill</label>
+                    
+                    <input id="billPut" class="inPut2" name="billAmount" type="text" placeholder="$0">
+                    
 
-               <div id="bTn">
-                <br>
-                    <alt class="alt">Select tip %</alt>
+                    <div id="bTn">
+                        <!--buttons for tip percent-->
+                        <br>
+                        <label for="altButtons" class="alt">Select tip %</label>
+                        <div name="altButtons">
+                            <button id="per5" class="btnTip" type="button" value=".05" onclick="">5%</button>
+                            <button id="per10" class="btnTip" type="button" value=".10" onclick="">10%</button>
+                            <button id="per15"  class="btnTip" type="button" value=".15" onclick="">15%</button>
+                            <br> 
+                            <button id="per25" class="btnTip" type="button" value=".25" onclick="">25%</button>
+                            <button id="per50" class="btnTip" type="button" value=".50" onclick="">50%</button>
+                            <input id="customInPut" type="text" placeholder="Custom">
+                        </div>
+                    </div>
+
                     <br>
-                    <button id="per5">5%</button>
-                    <button id="per10">10%</button>
-                    <button id="per15">15%</button>
-                    <br> 
-                    <button id="per25">25%</button>
-                    <button id="per50">50%</button>
-                    <input id="inPut" placeholder="Custom">
-               </div>
-               <br>
-
-               <alt class="alt">Number of People</alt>
-               <br>
-               <input id="inPut3" class="inPut2" placeholder="0">
-            </div> 
+                        <label class="alt">Number of People</label>
+                        <br>
+                        <input id="numPeople" class="inPut2" type="text" placeholder="0">
+                </form>
+           </section> 
                
-            <div id="result">
-                <p><strong class="perP">Tip amount</strong><br> / person </p>
-                <p><strong class="perP">Total</strong><br> / person </p>
-                <button class="reset">Reset</button>
-            </div>
+            <section id="result">
+                <div id="tipDiv">
+                    <p><strong>Tip amount</strong>        
+                        <br> / person </p>
+                        <p id="perTip"><h5></h5></p>
+                </div>
+    
+                <div id="totalDiv">
+                   <p><strong>Total</strong>          
+                        <br> / person </p>
+                    <p id="perTotal"><h5></h5></p>
+                </div>
+    
+                <button id="resetBtn" type="button" onclick="">Reset</button>
+            </section>
 
-        </section>
+        </div>
 
         <script src="C:\Users\kyras\OneDrive\Desktop\FED2207-Redux\Projects (PJ)\PJ00-W02-TipCalculatorApp\Tips.js"></script>
     </body>
