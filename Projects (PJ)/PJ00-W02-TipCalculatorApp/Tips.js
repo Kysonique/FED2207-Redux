@@ -1,15 +1,20 @@
 let billTotal = document.getElementById('billPut');
-// let perTotal = document.getElementById('perTotal');
-// let perTip = document.getElementById('perTip');
+let perTotal = document.getElementById('perTotal');
+let perTip = document.getElementById('perTip');
 let numPeople = document.getElementById('numPeople')
-// let tipPercent = document.getElementsByClassName('btnTip.value')
-
+//let tipPercent = document.getElementsByClassName('btnTip')
+//let tipPercent 
 let perFive = document.getElementById('per5');
 let perTen = document.getElementById('per10');
 let perFifteen = document.getElementById('per15');
 let perTwtFive = document.getElementById('per25');
 let perFifty = document.getElementById('per50');
-let customInput = document.getElementById('customInPut')
+let customInput = document.getElementById('customInPut');
+
+
+let resetBtn = document.getElementById('resetBtn');
+
+
 
 //button event listeners
     perFive.addEventListener("click", (event) =>{
@@ -33,19 +38,23 @@ let customInput = document.getElementById('customInPut')
         return perFifty.value
     });
 
+  
+
+
 //inputs even listeners
     billTotal.addEventListener("keyup", () => {
-        console.log(billTotal.value)
+        //console.log(billTotal.value)
         return billTotal.value
         
     });
 
     numPeople.addEventListener("keyup", () => {
-        console.log(numPeople.value)
+       // console.log(numPeople.value)
         return numPeople.value
     });
 
     customInput.addEventListener("keyup", () => {
+        // console.log(customInput.value)
         return customInput.value
     });
 
@@ -57,15 +66,17 @@ let customInput = document.getElementById('customInPut')
         return billAmount * tipAmount;
     }
 
-  let ttA  =  function billSplit(billAmount, numPeople){
-        //console.log(billAmount/numPeople)
-        document.getElementById('perTotal') = ttA;
+    function billSplit(billAmount, numPeople){
+        console.log(billAmount/numPeople)
+        return billAmount/numPeople;
 
-       // return billAmount/numPeople;
-    }
+    } //return perTotal.innerText = `${billSplit}`;
 
-  let ttB =  function tipSplit(tipTotal, numPeople){
-        return tipTotal/numPeople
+
+
+    function tipSplit(tipTotal, numPeople){
+        //return tipTotal/numPeople;
+        document.getElementById('perTip')
     }
 
     // document.getElementById('perTotal') = ttA;
