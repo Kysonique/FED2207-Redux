@@ -2,8 +2,8 @@ let billTotal = document.getElementById('billPut');
 let perTotal = document.getElementById('perTotal');
 let perTip = document.getElementById('perTip');
 let numPeople = document.getElementById('numPeople')
-//let tipPercent = document.getElementsByClassName('btnTip')
-//let tipPercent 
+let tipPercent = document.getElementsByClassName('btnTip')
+
 let perFive = document.getElementById('per5');
 let perTen = document.getElementById('per10');
 let perFifteen = document.getElementById('per15');
@@ -49,7 +49,8 @@ let resetBtn = document.getElementById('resetBtn');
     });
 
     numPeople.addEventListener("keyup", () => {
-       // console.log(numPeople.value)
+       //
+
         return numPeople.value
     });
 
@@ -62,12 +63,18 @@ let resetBtn = document.getElementById('resetBtn');
 
 
 //functions to run the calculator    
+let billAmount = billTotal.value;
+let tipAmount = tipPercent.value;
+let peopAmount = numPeople.value;
+
     function myCalculator(billAmount, tipAmount){
+        //console.log(billAmount * tipAmount);
         return billAmount * tipAmount;
     }
+    
 
     function billSplit(billAmount, numPeople){
-        console.log(billAmount/numPeople)
+        //console.log(billAmount/numPeople)
         return billAmount/numPeople;
 
     } //return perTotal.innerText = `${billSplit}`;
@@ -75,8 +82,9 @@ let resetBtn = document.getElementById('resetBtn');
 
 
     function tipSplit(tipTotal, numPeople){
-        //return tipTotal/numPeople;
-        document.getElementById('perTip')
+        //console.lot(tipTotal/numPeople)
+        return tipTotal/numPeople;
+        //document.getElementById('perTip')
     }
 
     // document.getElementById('perTotal') = ttA;
