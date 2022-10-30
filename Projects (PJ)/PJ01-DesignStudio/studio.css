@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F2F2F2;
+
+}
+
+body p{
+    font-size: 18px ;
+    font-weight: 500;
+    color: #7A746E; 
+
+}
+
+#arrBtns button{
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+    border-radius: 60%;    
+    background-color: #030303;
+    
+}
+#arrBtns{
+    margin-left: 48%;
+    margin-top: 2%;
+}
+
+
+.bTnDiv {
+    margin-left: 5px;
+    height: 57px;
+    /* border: 1px black solid; */
+}
+#constBtn1{
+   margin-left: 75%;
+   border-radius: 28px;
+   width: 228px;
+   height: 55px;
+   background-color: #030303;
+   color: white;
+}
+#logoBtn {
+    height: 56px;
+    border: none;
+}
+
+#bioBtn, #constBtn2{
+    background-color: #EB7565;
+    border-color: #EB7565;
+    color: white;
+
+    border-radius: 28px;
+    width: 228px;
+    height: 56px;
+
+}
+
+h1 {
+    height: 90px;
+    top: calc(50% - 90px/2 - 60px);
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 71px;
+    line-height: 45px;
+    text-align: center;
+    color: #030303;
+}
+
+#firstP {
+    height: 104px;
+    font-style: normal;
+    line-height: 26px;
+    text-align: center;
+}
+
+/* Panels */
+
+#panel {
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    height: 364px;
+    width: 1160px;
+    margin-left: 10% ;
+}
+#panel h5{
+    color: white;
+    text-align: left;
+}
+#graphDesign {
+    width: 343px;
+    height: 364px;
+    background: #755CDE;
+    border-radius: 8px;
+    margin-top: 24px;
+
+}
+.div2{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 53% 53%;
+    width: 343px;
+    height: 364px;
+}
+#uiUx {
+    width: 159px;
+    height: 170px;
+    margin-top: 24px;
+    /* top: 364px; */
+    background: #F6A560;
+    border-radius: 8px;
+}
+#apps {
+    width: 159px;
+    height: 170px;
+    margin-top: 24px;
+    
+    background: #F39E9E;
+    border-radius: 8px;
+}
+#illustrations {
+    width: 343px;
+    height: 170px;
+    
+    margin-top: 24px;
+    background: #EB7565;
+    border-radius: 8px;
+}
+#div3{
+    width: 343px;
+    height: 364px;
+
+}
+#photos {
+    width: 343px;
+    height: 170px;
+    margin-top: 24px;
+    background: #61C4B7;
+    border-radius: 8px;
+}
+#moGraphics {
+    width: 343px;
+    height: 170px;
+    margin-top: 24px;
+
+    background: #552049;
+    border-radius: 8px;
+}
+
+
+
+
+/* bio section */
+#bio{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 445px;
+    width: 1110px;
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+#viPP {
+    font-size: 40px;
+    font-weight: 700;
+    color: #030303;
+
+}
+
+#bioImg {
+    width: 78%;
+    height: 90%;
+
+}
+
+
+#theFooter{
+    height: 320px;
+    width: 1110px;
+    border-radius: 10px;
+    background-color: #030303;
+    margin: 8%;
+    color: #FFF7F0;
+
+}
+
+#theFooter h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+#bioBtn, #constBtn2{
+    background-color: #EB7565;
+    border-color: #EB7565;
+
+}
+
+.slideshow-container {
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+    width: 2820px;
+}
+
+
+
