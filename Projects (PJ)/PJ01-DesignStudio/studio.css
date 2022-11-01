@@ -21,9 +21,18 @@ body p{
    background-color: #030303;
    color: white;
 }
+#constBtn1:hover{
+    background-color: #755CDE;
+}
+
 #logoBtn {
     height: 56px;
     border: none;
+}
+.bTnDiv{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 #bioBtn, #constBtn2{
@@ -35,6 +44,9 @@ body p{
     height: 56px;
 
 }
+#bioBtn:hover, #constBtn2:hover{
+    background-color: #F6A560;
+}
 
 h1 {
     height: 90px;
@@ -43,7 +55,7 @@ h1 {
     font-style: normal;
     font-weight: 700;
     font-size: 71px;
-    line-height: 45px;
+    line-height: normal;
     text-align: center;
     color: #030303;
 }
@@ -193,13 +205,18 @@ h1 {
 
 
 /* my work section */
+#myWork h3{
+    text-align: center;
+}
 .slideshow-container {
     display: flex;
     flex-direction: row;
     height: 360px;
     width: 2820px;
 }
-
+.mySlides{
+    margin-right: 2%;
+}
 .arrBtns{
     height: 7%;
     width: 7%;
@@ -207,9 +224,14 @@ h1 {
     border-radius: 60%;    
     background-color: #030303;
 }
+.arrBtns:hover{
+    background-color: #755CDE;
+}
+
 #arrBtnsDiv{
     margin-left: 48%;
     margin-top: 5%;
+    align-self: flex-start;
 }
 
 
@@ -268,7 +290,21 @@ h1 {
         
 
     }
-  
- 
-   
+    .arrBtns{
+        height: 10%;
+        width: 10%;
+        padding: 3%;
+        border-radius: 60%;    
+        background-color: #030303;
+    }
+       
+    #firstP {
+        margin-top: 18%;
+    }
+
+    .bTnDiv{
+        align-self: flex-start;
+    }
+
+    
 }
