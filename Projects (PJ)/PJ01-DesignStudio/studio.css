@@ -14,7 +14,7 @@ body p{
 }
 
 #constBtn1{
-   margin-left: 75%;
+   /* margin-left: 75%; */
    border-radius: 28px;
    width: 228px;
    height: 55px;
@@ -31,6 +31,7 @@ body p{
 }
 .bTnDiv{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
 }
@@ -46,6 +47,10 @@ body p{
 }
 #bioBtn:hover, #constBtn2:hover{
     background-color: #F6A560;
+}
+#bioBtn{
+    margin-left: 35%;
+    margin-top: 15%;
 }
 
 h1 {
@@ -231,7 +236,6 @@ h1 {
 #arrBtnsDiv{
     margin-left: 48%;
     margin-top: 5%;
-    align-self: flex-start;
 }
 
 
@@ -251,6 +255,9 @@ h1 {
 
 #footDiv1, #footDiv2{
     margin: 3%;
+}
+#footDiv1{
+    margin-left: 5%;
 }
 
 #theFooter h3{
@@ -296,15 +303,17 @@ h1 {
         padding: 3%;
         border-radius: 60%;    
         background-color: #030303;
+        align-self: flex-start;
+
     }
        
     #firstP {
         margin-top: 18%;
     }
 
-    .bTnDiv{
+    #logoBtn{
         align-self: flex-start;
     }
-
+    
     
 }
