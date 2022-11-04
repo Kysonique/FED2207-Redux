@@ -1,6 +1,6 @@
 let billTotal = document.getElementById('billPut');
-let perTotal = document.getElementById('perTotal');
-let perTip = document.getElementById('perTip');
+// let perTotal = document.getElementById('perTotal');
+// let perTip = document.getElementById('perTip');
 let numPeople = document.getElementById('numPeople')
 let tipPercent = document.getElementsByClassName('btnTip')
 
@@ -75,9 +75,11 @@ let peopAmount = numPeople.value;
 
     function billSplit(billAmount, numPeople){
         //console.log(billAmount/numPeople)
+        
         return billAmount/numPeople;
 
     } //return perTotal.innerText = `${billSplit}`;
+    document.getElementById('perTotal').innerHTML = billSplit()
 
 
 
