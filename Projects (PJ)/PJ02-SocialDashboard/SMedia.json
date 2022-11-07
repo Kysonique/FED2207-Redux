@@ -1,8 +1,84 @@
 {
-    "social-dashboards":{
+    "socialMediaInfo":{
         "facebook":{
+            "platform": "facebook",
+            "username": "@nathanf",
+            "categories":[{
+                "title": "followers",
+                "amount": "1987",
+                "previousDay" : ""
+            },
+            {
+                "title": "page-views",
+                "amount": "87",
+                "previousDay" : ""
+            },
+            {
+                "title": "likes",
+                "amount": "52",
+                "previousDay" : ""
+            }
+        ]},
+
+        "twitter":{
+            "platform": "twitter",
+            "username": "@nathanf",
+            "categories":[{
+                "title": "followers",
+                "amount": "1044",
+                "previousDay" : ""
+            },
+            {
+                "title": "retweets",
+                "amount": "117",
+                "previousDay" : ""
+            },
+            {
+                "title": "likes",
+                "amount": "507",
+                "previousDay" : ""
+            }
+        ]},
+
+        "instagram":{
+            "platform": "instagram",
+            "username": "@realnathanf",
+            "categories":[{
+                "title": "followers",
+                "amount": "11000",
+                "previousDay" : ""
+            },
+            {
+                "title": "likes",
+                "amount": "5462",
+                "previousDay" : ""
+            },
+            {
+                "title": "page-views",
+                "amount": "52000",
+                "previousDay" : ""
+            }
+        ]},
+
+        "youTube":{
+            "platform": "youTube",
+            "username": "Nathan F.",
+            "categories":[{
+                "title": "subcribers",
+                "amount": "8239",
+                "previousDay" : ""
+            },
+            {
+                "title": "likes",
+                "amount": "107",
+                "previousDay" : ""
+            },
+            {
+                "title": "total-views",
+                "amount": "1407",
+                "previousDay" : ""
+            }]
             
         }
     }
-
 }
