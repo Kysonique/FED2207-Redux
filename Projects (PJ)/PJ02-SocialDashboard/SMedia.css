@@ -1,7 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
 
+/* var(--mycolor: linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%) ) */
+:root{
+    --mycolor: linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%);
+}
+
 body{
     font-family: 'Inter', sans-serif;
+    padding: 3%;
 }
 
 h1{
@@ -59,13 +65,21 @@ h3{
     background-color: #F1F3FA;
     line-height: 15px;
 }
+.dark-mode .dashDivs{
+    background-color: #252B42;
+}
 .dashDivs:hover{
     background-color: #E1E4F0;
 }
+.dark-mode .dashDivs:hover{
+    background-color: #333A55;
+}
 
+/* :root{
+    --mycolor: linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%);
+} */
 #dashDiv3{
-    box-shadow: 0px -10px  #DF4896;
-    /* linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%); */
+    box-shadow: 0px -10px #EE877E;    /* linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%); */
 }
 /* .textDiv{
     height: 72px;
@@ -93,6 +107,9 @@ h3{
     color: #1D1F29;
     margin-top: 35px;
     margin-bottom: 20px;
+}
+.dark-mode .totalFollowers{
+    color: white;
 }
 .followers{
     font-size: 12px;
@@ -137,7 +154,20 @@ h3{
 .rowDiv2:hover{
     background-color: #E1E4F0;
 }
+.rowDiv2 img{
+    align-self: center;
+    margin-left: 40%;
+}
+.dark-mode .rowDiv2{
+    background-color: #252B42;
+    color: #ffff;
+}
+.dark-mode .rowDiv2:hover{
+    background-color: #333A55;
+}
+
 #titleP{
+    align-self: center;
     font-size: 16px;
     font-weight: 700;
     color: #63687D;
@@ -147,6 +177,8 @@ h3{
     font-weight: 700;
 }
 #percentToday{
+    align-self: center;
+    margin-right: 30%;
     font-size: 12px;
     font-weight: 700;
 }
@@ -155,8 +187,13 @@ h3{
 
 .dark-mode{
     background-color: #20222F;
+}
+.dark-mode h1{
     color: white;
 }
+
+
+
 
 
 /* table */ 
