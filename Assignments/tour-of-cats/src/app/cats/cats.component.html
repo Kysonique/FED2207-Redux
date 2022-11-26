@@ -1,0 +1,7 @@
+<h2>{{cat.breed | uppercase}} Details</h2>
+<div><span>origin: </span>{{cat.origin}}</div>
+<div><span>temperment: </span>{{cat.temperment}}</div>
+<div>
+    <label for="breed">Cat breed</label>
+    <input id="breed" [(ngModel)]="cat.breed" placeholder="breed">
+</div>
