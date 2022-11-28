@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Cat } from '../cat';
+import { CATS } from '../mock-cats';
 
 @Component({
   selector: 'app-cats',
@@ -7,29 +8,35 @@ import { Cat } from '../cat';
   styleUrls: ['./cats.component.css']
 })
 export class CatsComponent {
-  cat: Cat ={
-    breed: "American Bobtail",
-    origin: "United States",
-    size: {
-        height: [10, 14],   //smallest-largest inches
-        length: [12, 20],   //smallest-largest inches
-        weight: [7, 18],    //smallest-largest pounds
-    },
+  cats = CATS;
+  selectedCat?: Cat;
+  onSelect(cat: Cat): void{
+    this.selectedCat = cat;
+  }
 
-    temperment:[
-        "lively", 
-        "intelligent", 
-        "personable", 
-        "curious"
-    ], 
+//   cat: Cat ={
+//     breed: "American Bobtail",
+//     origin: "United States",
+//     size: {
+//         height: [10, 14],   //smallest-largest inches
+//         length: [12, 20],   //smallest-largest inches
+//         weight: [7, 18],    //smallest-largest pounds
+//     },
 
-    coat: [
-        "short hair", 
-        "long hair"
-    ],
+//     temperment:[
+//         "lively", 
+//         "intelligent", 
+//         "personable", 
+//         "curious"
+//     ], 
 
-    lifeExpectancy: [12, 15],
-}
+//     coat: [
+//         "short hair", 
+//         "long hair"
+//     ],
+
+//     lifeExpectancy: [12, 15],
+// }
  constructor () {}
 
 }

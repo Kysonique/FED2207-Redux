@@ -4,14 +4,12 @@ import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CatsComponent } from './cats/cats.component';
-import { CatDetailComponent } from './cat-detail/cat-detail.component';
+import { CarsComponent } from './cars/cars.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    CatsComponent,
-    CatDetailComponent
+    CarsComponent
   ],
   imports: [
     BrowserModule,

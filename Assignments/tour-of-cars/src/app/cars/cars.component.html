@@ -1,0 +1,7 @@
+<h2>{{car.make | uppercase}} {{car.model | uppercase}} Details</h2>
+<div><span>year: </span>{{car.year}}</div>
+<div>
+    <label for="name">Car model: </label> 
+    <input id="name" [(ngModel)]="car.model" placeholder="model">
+</div>
+
