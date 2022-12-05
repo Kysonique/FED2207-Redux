@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Car } from '../car';
-
+import { CARS } from '../mock-cars';
+import { CarService } from '../car.service';
 
 @Component({
   selector: 'app-cars',
@@ -8,27 +9,22 @@ import { Car } from '../car';
   styleUrls: ['./cars.component.css']
 })
 export class CarsComponent {
-  car: Car = {
-    make: 'Honda',
-    model: 'Civic',
-    year: 1992,
-    trim: {
-      doors: 3,
-      vehicleType: 'Hatchback DX 5-speed',
-    },
-    engine: {
-        cylinder: 4,
-        liter: 1.5,
-    },
-
-    horsePower: {
-        watts: 102,
-        rpm: 5900,
-    },
-
-    torque: {
-        watts: 98,
-        rpm: 5000,
-    },
+  cars: Car[] = [];
+  
+  getCars():void {
+    this.carService.getCars()
+    .subscribe(cars => this.cars = cars) ;
   }
+  
+  selectedCar?: Car;
+  onSelect(car: Car): void{
+    this.selectedCar = car;
+  }
+
+  constructor (private carService: CarService) {}
+
+  ngOnInit(): void{
+    this.getCars();
+  }
+
 }
