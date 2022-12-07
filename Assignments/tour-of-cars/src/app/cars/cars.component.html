@@ -1,4 +1,6 @@
-<h2>My Cars</h2>
+<nav>    
+    <a routerLink="/dashboard" class="home">Home</a>
+</nav>
 <div class="carList">
     <ul class="cars">
         <li *ngFor="let car of cars">
@@ -13,6 +15,15 @@
         <app-car-detail [car]="selectedCar"></app-car-detail>
     </div>
 </div>
+
+<!-- <div>
+    <span>{{}}</span>
+</div> -->
+
+
+
+
+
 
 <!-- section details -->
 <!-- <div *ngIf="selectedCar">
