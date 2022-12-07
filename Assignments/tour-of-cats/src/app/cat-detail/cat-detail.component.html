@@ -1,1 +1,14 @@
-<p>cat-detail works!</p>
+<!-- cat details -->
+<div *ngIf="cat" class="catDetails">
+    <h2>{{cat.breed | uppercase}} Details</h2>
+    <div>
+    origin: {{cat.origin}} <br>
+    size (smallest and largest): 
+        height:{{cat.size.height}}in 
+        length:{{cat.size.length}}in 
+        weight:{{cat.size.weight}}lbs  <br>
+    temperment: {{cat.temperment}} <br>
+    coat: {{cat.coat}} <br>
+    life expectancy: {{cat.lifeExpectancy}}</div>
+
+</div>

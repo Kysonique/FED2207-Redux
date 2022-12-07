@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Cat } from '../cat';
-import { CATS } from '../mock-cats';
+import { CatService } from '../cat.service';
 
 @Component({
   selector: 'app-cats',
@@ -8,35 +8,21 @@ import { CATS } from '../mock-cats';
   styleUrls: ['./cats.component.css']
 })
 export class CatsComponent {
-  cats = CATS;
+  cats: Cat[] = [];
+  
+  getCats():void {
+    this.catService.getCats()
+    .subscribe(cats => this.cats = cats) ;
+  }
+  
   selectedCat?: Cat;
-  onSelect(cat: Cat): void{
-    this.selectedCat = cat;
+  onSelect(Cat: Cat): void{
+    this.selectedCat = Cat;
   }
 
-//   cat: Cat ={
-//     breed: "American Bobtail",
-//     origin: "United States",
-//     size: {
-//         height: [10, 14],   //smallest-largest inches
-//         length: [12, 20],   //smallest-largest inches
-//         weight: [7, 18],    //smallest-largest pounds
-//     },
+  constructor (private catService: CatService) {}
 
-//     temperment:[
-//         "lively", 
-//         "intelligent", 
-//         "personable", 
-//         "curious"
-//     ], 
-
-//     coat: [
-//         "short hair", 
-//         "long hair"
-//     ],
-
-//     lifeExpectancy: [12, 15],
-// }
- constructor () {}
-
+  ngOnInit(): void{
+    this.getCats();
+  }
 }

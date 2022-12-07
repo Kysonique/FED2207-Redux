@@ -1,0 +1,14 @@
+.dashboardDiv {
+    background-color: #6cbc84;
+    height: 300px;
+    width: 300px;
+}
+.div2 {
+    padding: 20%;
+}
+
+.catsLink {
+    color: white;
+    font-family: 'Dancing Script', cursive;
+    font-size: 56px;
+}

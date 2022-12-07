@@ -1,0 +1,10 @@
+h1 {
+    color: #24a4c4;
+    font-family: 'Dancing Script', cursive;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

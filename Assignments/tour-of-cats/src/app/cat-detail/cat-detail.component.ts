@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { Cat } from '../cat';
 
 @Component({
   selector: 'app-cat-detail',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./cat-detail.component.css']
 })
 export class CatDetailComponent {
+  @Input() cat?: Cat;
+
 
 }
