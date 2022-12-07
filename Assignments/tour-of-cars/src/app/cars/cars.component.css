@@ -2,7 +2,7 @@
 .carList {
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   background-color: #193842;
 }
