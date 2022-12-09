@@ -11,6 +11,7 @@ h2{
   align-items: center;
   background-color: #ffdc0c;
 }
+
 @media screen and (max-width: 600px) {
   .list {
     display: flex;
@@ -22,16 +23,17 @@ h2{
 }
 
 .home {
+  font-family: 'Dancing Script', cursive;
   font-size: 20px;
   color: #d6b700;
 }
 
-.cats {
+/* .cats {
     margin: 0 0 2em 0;
     list-style-type: none;
-    padding: 0;
+    padding: 0; 
     width: 18em;
-  }
+  } */
   
   .cats li {
     display: flex;
