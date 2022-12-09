@@ -24,6 +24,8 @@ export const CATS: Cat[] = [
     ],
 
     lifeExpectancy: [12, 15],
+
+    image: 'https://allaboutcats.com/wp-content/uploads/2020/10/American-Bobtail-Cat-2-768x384.jpg',
 },
 
 {
@@ -43,6 +45,7 @@ export const CATS: Cat[] = [
     ],
     coat: ["short hair"],
     lifeExpectancy: [18, 20],
+    image: 'https://allaboutcats.com/wp-content/uploads/2020/10/Savannah-kitten.jpg',
 },
 
 {
@@ -64,6 +67,7 @@ export const CATS: Cat[] = [
     coat: ["short hair"],
 
     lifeExpectancy: [11, 18],
+    image: 'https://allaboutcats.com/wp-content/uploads/2020/10/Chartreux-Cat-compressed-768x384.jpg',
 },
 
 {
@@ -85,6 +89,7 @@ export const CATS: Cat[] = [
     coat:["long hair"],
 
     lifeExpectancy: [12, 15],
+    image: ''
 },
 
 {
@@ -107,6 +112,7 @@ export const CATS: Cat[] = [
     coat: ["short hair"],
 
     lifeExpectancy: [15, 20],
+    image: ''
 },
 
 {
@@ -128,6 +134,7 @@ export const CATS: Cat[] = [
     coat: ["medium hair"],
 
     lifeExpectancy: [11, 15],
+    image: ''
 },
 
 {
@@ -150,6 +157,7 @@ export const CATS: Cat[] = [
     coat: ["long hair"],
 
     lifeExpectancy: [11, 15],
+    image: ''
 },
 
 {
@@ -171,6 +179,7 @@ export const CATS: Cat[] = [
     coat: ["short hair"],
 
     lifeExpectancy: [12, 15],
+    image: ''
 },
 
 {
@@ -193,6 +202,7 @@ export const CATS: Cat[] = [
     coat: ["short hair"],
 
     lifeExpectancy: [12, 20],
+    image: ''
 },
 
 {
@@ -215,5 +225,6 @@ export const CATS: Cat[] = [
     coat: ["hairless"],
 
     lifeExpectancy: [15, 20],
+    image: ''
 }
 ]

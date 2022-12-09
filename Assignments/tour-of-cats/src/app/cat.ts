@@ -12,5 +12,7 @@ export interface Cat {
     coat: string[];
   
     lifeExpectancy: number[];
+
+    image: string;
   }
   
