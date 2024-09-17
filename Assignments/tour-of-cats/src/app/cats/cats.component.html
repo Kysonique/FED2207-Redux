@@ -1,0 +1,42 @@
+<nav>    
+    <a routerLink="/dashboard" class="home">Home</a>
+</nav>
+ 
+<h2>My Cats</h2>
+<div class="list">
+    <ul class="cats">
+        <li *ngFor="let cat of cats">
+            <button type="button" (click)="onSelect(cat)" [class.selected]="cat === selectedCat">
+                <span class="badge">{{cat.origin}}</span>   
+                <span class="name">{{cat.breed}} </span>
+        </button>
+        </li>
+    </ul>
+    
+    <div>
+        <app-cat-detail [cat]="selectedCat"></app-cat-detail>
+    </div>
+</div>
+
+
+<!-- cat details -->
+<!-- <div *ngIf="selectedCat">
+    <h2>{{selectedCat.breed | uppercase}} Details</h2>
+    <div>origin: {{selectedCat.origin}}</div>
+    <div>size (smallest and largest): 
+        height:{{selectedCat.size.height}}in 
+        length:{{selectedCat.size.length}}in 
+        weight:{{selectedCat.size.weight}}lbs</div>
+    <div>temperment: {{selectedCat.temperment}}</div>
+    <div>coat: {{selectedCat.coat}}</div>
+    <div>life expectancy: {{selectedCat.lifeExpectancy}}</div>
+
+</div> -->
+
+<!-- <h2>{{cat.breed | uppercase}} Details</h2>
+<div><span>origin: </span>{{cat.origin}}</div>
+<div><span>temperment: </span>{{cat.temperment}}</div>
+<div>
+    <label for="breed">Cat breed</label>
+    <input id="breed" [(ngModel)]="cat.breed" placeholder="breed">
+</div> -->

@@ -1,0 +1,41 @@
+<nav>    
+    <a routerLink="/dashboard" class="home">Home</a>
+</nav>
+<div class="carList">
+    <ul class="cars">
+        <li *ngFor="let car of cars">
+            <button [class.selected]="car === selectedCar" type="button" (click)="onSelect(car)">
+                <span class="badge">{{car.year}}</span>
+                <span class="name">{{car.make}} {{car.model}}</span>
+            </button>
+        </li>
+    </ul>
+
+    <div>
+        <app-car-detail [car]="selectedCar"></app-car-detail>
+    </div>
+</div>
+
+<!-- <div>
+    <span>{{}}</span>
+</div> -->
+
+
+
+
+
+
+<!-- section details -->
+<!-- <div *ngIf="selectedCar">
+    <h2>{{selectedCar.make | uppercase}} {{selectedCar.model | uppercase}} Details</h2>
+    <div>year: {{selectedCar.year}}</div>
+    <div>trim: {{selectedCar.trim.doors}} door {{selectedCar.trim.vehicleType}}</div>
+    <div>engine: {{selectedCar.engine.cylinder}} cyl. {{selectedCar.engine.liter}} L.</div>
+    <div>horse power: {{selectedCar.horsePower.watts}} @ {{selectedCar.horsePower.rpm}} RPM</div>
+    <div>torque: {{selectedCar.torque.watts}} @ {{selectedCar.torque.rpm}} rpm</div>
+<div>
+    <label for="name">Car model: </label> 
+    <input id="name" [(ngModel)]="selectedCar.model" placeholder="model">
+</div>
+</div> -->
+

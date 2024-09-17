@@ -1,0 +1,319 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;700&display=swap');
+
+body{
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background-color: #F2F2F2;
+
+}
+
+body p{
+    font-size: 18px ;
+    font-weight: 500;
+    color: #7A746E; 
+
+}
+
+#constBtn1{
+   /* margin-left: 75%; */
+   border-radius: 28px;
+   width: 228px;
+   height: 55px;
+   background-color: #030303;
+   color: white;
+}
+#constBtn1:hover{
+    background-color: #755CDE;
+}
+
+#logoBtn {
+    height: 56px;
+    border: none;
+}
+.bTnDiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bioBtn, #constBtn2{
+    background-color: #EB7565;
+    border-color: #EB7565;
+    color: white;
+    border-radius: 28px;
+    width: 228px;
+    height: 56px;
+
+}
+#bioBtn:hover, #constBtn2:hover{
+    background-color: #F6A560;
+}
+#bioBtn{
+    margin-left: 35%;
+    margin-top: 15%;
+}
+
+h1 {
+    height: 90px;
+    top: calc(50% - 90px/2 - 60px);
+    font-family: 'Plus Jakarta Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 71px;
+    line-height: normal;
+    text-align: center;
+    color: #030303;
+}
+
+#firstP {
+    height: 104px;
+    font-style: normal;
+    line-height: 26px;
+    text-align: center;
+}
+
+
+
+/* Panels */
+
+#panel {
+    display: grid;
+    grid-template-columns: 31% 31% 31%;
+    /* height: 364px;
+    width: 1160px; */
+    margin-left: 10% ;
+
+}
+.hFive{
+    color: white;
+    font-size: 24px;
+    text-align: left;
+}
+.panelIMG{
+    margin: 5%;
+    margin-left: 55%;
+}
+#graphDesign {
+    width: 343px;
+    height: 364px;
+    background: #755CDE;
+    border-radius: 8px;
+    margin-top: 8%;
+
+}
+.div2{
+    display: grid;
+    grid-template-rows: auto auto;
+    grid-template-columns: 53% 53%;
+    width: 345px;
+    height: 366px;
+    margin-top: 5%;
+    margin-left: 1%;
+
+
+}
+#uiUx {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    width: 159px;
+    height: 170px;
+    /* top: 364px; */
+    background: #F6A560;
+    border-radius: 8px;
+}
+#apps {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+
+    width: 159px;
+    height: 170px;
+    
+    background: #F39E9E;
+    border-radius: 8px;
+}
+#illustrations {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+
+    width: 343px;
+    height: 170px;
+    
+    margin-top: 24px;
+    background: #EB7565;
+    border-radius: 8px;
+}
+#div3{
+    margin-top: 7%;
+    width: 343px;
+    height: 364px;
+
+}
+#photos {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+
+    width: 343px;
+    height: 170px;
+    background: #61C4B7;
+    border-radius: 8px;
+}
+#moGraphics {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+
+    width: 343px;
+    height: 170px;
+    margin-top: 24px;
+    background: #552049;
+    border-radius: 8px;
+}
+
+
+
+
+/* bio section */
+#bio{
+    display: grid;
+    grid-template-columns: auto auto;
+    height: 85%;
+    width: 85%;
+    margin-left: 8%;
+    margin-top: 10%;
+    text-align: center;
+}
+
+#viPP {
+    font-size: 40px;
+    font-weight: 700;
+    color: #030303;
+
+}
+
+#bioImg {
+    width: 78%;
+    height: 90%;
+
+}
+
+#bioBtn, #constBtn2{
+    background-color: #EB7565;
+    border-color: #EB7565;
+
+}
+
+
+
+
+/* my work section */
+#myWork h3{
+    text-align: center;
+}
+.slideshow-container {
+    display: flex;
+    flex-direction: row;
+    height: 360px;
+    width: 2820px;
+}
+.mySlides{
+    margin-right: 2%;
+}
+.arrBtns{
+    height: 7%;
+    width: 7%;
+    padding: 16px;
+    border-radius: 60%;    
+    background-color: #030303;
+}
+.arrBtns:hover{
+    background-color: #755CDE;
+}
+
+#arrBtnsDiv{
+    margin-left: 48%;
+    margin-top: 5%;
+}
+
+
+
+
+/* footer section */
+#theFooter{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    height: 55%;
+    width: 85%;
+    border-radius: 10px;
+    background-color: #030303;
+    margin: 8%;
+    color: #FFF7F0;
+}
+
+#footDiv1, #footDiv2{
+    margin: 3%;
+}
+#footDiv1{
+    margin-left: 5%;
+}
+
+#theFooter h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+
+
+@media screen and (max-width: 600px) {
+    body div{
+        /* display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto auto auto; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+     #panel{
+        display: flex;
+        flex-direction: column;
+    } 
+
+    #bio{
+        /*display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto;*/
+        display: flex;
+        flex-direction: column;
+    } 
+    #theFooter{
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .arrBtns{
+        height: 10%;
+        width: 10%;
+        padding: 3%;
+        border-radius: 60%;    
+        background-color: #030303;
+        align-self: flex-start;
+
+    }
+       
+    #firstP {
+        margin-top: 18%;
+    }
+
+    #logoBtn{
+        align-self: flex-start;
+    }
+    
+    
+}

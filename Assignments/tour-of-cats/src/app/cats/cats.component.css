@@ -1,0 +1,97 @@
+/* HeroesComponent's private CSS styles */
+h2{
+  font-family: 'Dancing Script', cursive;
+  font-size: 36px;
+  color:#6cbc84;
+}
+.list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffdc0c;
+}
+
+@media screen and (max-width: 600px) {
+  .list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+}
+
+.home {
+  font-family: 'Dancing Script', cursive;
+  font-size: 20px;
+  color: #d6b700;
+}
+
+/* .cats {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0; 
+    width: 18em;
+  } */
+  
+  .cats li {
+    display: flex;
+  }
+  
+  .cats button {
+    flex: 1;
+    cursor: pointer;
+    position: relative;
+    left: 0;
+    background-color: #EEE;
+    margin: .5em;
+    padding: 0;
+    border-radius: 4px;
+    display: flex;
+    align-items: stretch;
+    height: 2em;
+  }
+  
+  .cats button:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+    left: .1em;
+  }
+  
+  .cats button:active {
+    background-color: #525252;
+    color: #fafafa;
+  }
+  
+  .cats button.selected {
+    background-color: #104b5a;
+    color: white;
+  }
+  
+  .cats button.selected:hover {
+    background-color: #1b7e96;
+    color: white;
+  }
+  
+  .cats button.selected:active {
+    background-color: black;
+    color: white;
+  }
+  
+  .cats .badge {
+    display: inline-block;
+    font-size: small;
+    color: white;
+    width: 5em;
+    padding: 0.8em 0.7em 0 0.7em;
+    background-color: #24a4c4;
+    line-height: 1em;
+    margin-right: .8em;
+    border-radius: 4px 0 0 4px;
+    text-align: center;
+  }
+  
+  .cats .name {
+    align-self: center;
+  }

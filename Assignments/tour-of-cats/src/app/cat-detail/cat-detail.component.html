@@ -1,0 +1,18 @@
+<!-- cat details -->
+<div *ngIf="cat" class="catDetails">
+    <h2>{{cat.breed | uppercase}}</h2>
+    <div>
+    origin: {{cat.origin}} <br>
+    size (smallest and largest): <br>
+        height:{{cat.size.height[0]}}in - {{cat.size.height[1]}}in 
+        length:{{cat.size.length}}in 
+        weight:{{cat.size.weight}}lbs<br>
+    temperment: <br>
+    {{cat.temperment}}<br>
+    coat: {{cat.coat}} <br>
+    life expectancy: {{cat.lifeExpectancy}} years</div>
+    <div>
+       <img src="{{cat.image}}">
+    </div>
+
+</div>

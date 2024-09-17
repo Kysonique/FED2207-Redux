@@ -1,0 +1,14 @@
+<!-- section details -->
+<div *ngIf="car" class="carDetails">
+        <h2>{{car.make | uppercase}} {{car.model | uppercase}}</h2>
+        <div>year: {{car.year}}</div>
+        <div>trim: {{car.trim.doors}} door {{car.trim.vehicleType}}</div>
+        <div>engine: {{car.engine.cylinder}} cyl. {{car.engine.liter}} L.</div>
+        <div>horse power: {{car.horsePower.watts}} @ {{car.horsePower.rpm}} RPM</div>
+        <div>torque: {{car.torque.watts}} @ {{car.torque.rpm}} rpm</div>
+
+    <!-- <div>
+        <label for="name">Car model: </label> 
+        <input id="name" [(ngModel)]="car.model" placeholder="model">
+    </div> -->
+</div>

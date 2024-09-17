@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+/* font-family: 'League Spartan', sans-serif; */
+body{
+    font-family: 'League Spartan', sans-serif;
+}
+#clearBtn{
+    width: 245px;
+    height: 64px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: transparent;
+    border: 1px white solid;
+}
+
+
+#headDiv{
+    background-color: black;
+    height: 820px;
+    display: flex;
+     flex-direction: row;
+    justify-content: space-around; 
+    width: 1440px;
+    
+}
+#headerIMG{
+    width: 70%;
+}
+#dineDiv1{
+    padding-top: 3%;
+    width: 507px;
+    margin-left: 8%;
+
+    /* align-items: center; */
+}
+#dine{
+    padding-top: 8%;
+    padding-left: 8%;
+
+}
+.dineText{
+    font-weight: 800;
+    font-size: 40px;
+    color: white;
+
+}
+
+#dineH1{
+    font-size: 80px;
+    font-weight: 300;
+    color: white;
+}
+
+p{
+    font-size: 20px;
+    font-weight: 400;
+}
+
+
+
+/* section */
+#sectionDiv1, #sectionDiv2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/* #sectionDiv2{
+    display: flex;
+    flex-direction: row;
+} */
+
+h2{
+    font-size: 48px;
+    font-weight: 700;
+    
+}
+#section1Pic1{
+    margin-top: -10%;
+}
+#section1Pic2{
+    margin-bottom: -10%;
+}
+
+#section2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 1340px;
+    height: 761px;
+    background-color: black;
+}
+.faves{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.faves img{
+    margin-right: 10%;
+}
+
+.faveP{
+    color: white;
+
+}
+
+/* slideshow */
+.slideshow-container{
+    width: 1110;
+    height: 600px;
+}
+.mySlides{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#slideBtn{
+    width: 245px;
+    height: 64px;
+    color: white;
+    font-size: 17px;
+    font-weight: 600;
+    background-color: black;
+}
+a:hover{
+    cursor: pointer;
+}
+
+
+
+
+/* footer */
+#footer1{
+    display: flex;
+    flex-direction: row;
+    height: 240px;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+#footer2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: black;
+}
+h5{
+    color: white;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+
+
+
+
+/* reservations */
+#reservations{
+    background-color: black;
+    width: 1325px;
+    height: 600px;
+    padding: 5%;
+}
+
+#form-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+#mainForm{
+    height: 545px;
+    width: 540px;
+    padding: 1%;
+    background-color: white;
+    border: 1px black solid;
+    margin-top: -30%;
+    margin-left: -40%;
+}
+#formData{
+    border: none;
+    border-bottom: 1px gray solid;
+    width: 444px;
+    color: gray;
+    font-size: 20px;
+    font-weight: 400;
+    margin-left: 8%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+#altText1{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5%;
+    margin-left: 8%;
+    line-height: 5%;
+}
+#altText2{
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 5%;
+    margin-left: 8%;
+    line-height: 5%;
+}
+#pickDT{
+    font-size: 18px;
+    font-weight: 400;
+    color: gray;
+    border: none;
+    border-bottom: 1px gray solid;
+    width: 44px;
+    margin-left: 7%;
+    text-align: center;
+}
+#numPeople{
+    font-size: 20px;
+    font-weight: 700;
+    color: black;
+    border: none;
+    text-align: center;
+    width: 100px;
+    margin-top: 8%;
+    margin-bottom: 8%;
+    margin-left: 18%;
+}
+#plusMinus{
+    margin-left: 15%;
+}
+ hr{
+    width: 444px;
+}
+#submitBtn{
+    width: 444px;
+    height: 64px;
+    margin: 8%;
+    font-size: 17px;
+    font-weight: 600;
+    color: white;
+    background-color: black;
+}
+
+/* background images */
+#bottomCurve{
+    width: 980px;
+    height: 300px;
+    margin-left: -36%;
+}
+#linePattern{
+    width: 160px;
+    height: 76px;
+    margin-top: 10%;
+    position: relative;
+    left: 35%; 
+}
+
+
+
+/* media */
+@media screen and (max-width: 600px){
+    #sectionDiv1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #sectionDiv2{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .faves{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #dineDiv1{
+        text-align: center;
+    }
+    #section2{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: fit-content;
+        height: fit-content;
+        text-align: center;
+    }
+    .slideshow-container{
+        height: 781px;
+    }
+    .mySlides{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #section1Pic1, #section1Pic2{
+        height: 350px;
+        width: vw;
+
+    }
+    #slideShowIMG{
+        height: 350px;
+        width: vw;
+    }
+    #footer1{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #headDiv{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        width: vw;
+    }
+
+}

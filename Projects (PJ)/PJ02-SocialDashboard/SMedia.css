@@ -1,0 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+/* var(--mycolor: linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%) ) */
+:root{
+    --mycolor: linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%);
+}
+
+body{
+    font-family: 'Inter', sans-serif;
+    padding: 3%;
+}
+
+h1{
+    color: #1D1F29;
+    font-size: 28px;
+    font-weight: 700;
+}
+#p1{
+    color: #63687D;
+    font-size: 14px;
+    font-weight: 700;
+}
+#altTag{
+    color: #848BAB;
+    font-size: 14px;
+    font-weight: 700;
+}
+#headBtn{
+    width: 48px;
+    height: 24px;
+    border-radius: 30px;
+    background: linear-gradient(225deg, #40DB82 0%, #388FE7 98.02%);
+    border: none;
+}
+h3{
+    font-size: 24px;
+    color: #63687D;
+}
+
+
+#h1Div{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 54px;
+}
+
+
+
+/* the dashboard */
+#dashBoards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 4%;
+}
+.dashDivs{
+    width: 255px;
+    height: 216px;
+    /* border: 1px black solid; */
+    border-radius: 5%;
+    text-align: center;
+    background-color: #F1F3FA;
+    line-height: 15px;
+}
+.dark-mode .dashDivs{
+    background-color: #252B42;
+}
+.dashDivs:hover{
+    background-color: #E1E4F0;
+}
+.dark-mode .dashDivs:hover{
+    background-color: #333A55;
+}
+
+/* :root{
+    --mycolor: linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%);
+} */
+#dashDiv3{
+    box-shadow: 0px -10px #EE877E;    /* linear-gradient(225deg, #DF4896 0%, #EE877E 50.91%, #FDC366 100%); */
+}
+/* .textDiv{
+    height: 72px;
+    width: 118px;
+    align-self: center;
+    line-height: 1px;
+} */
+#userName{
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   align-items: center;
+   margin-top: 5%;
+}
+.userName{
+    color: #63687D;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.totalFollowers{
+    font-size: 56px;
+    font-weight: 700;
+    color: #1D1F29;
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+.dark-mode .totalFollowers{
+    color: white;
+}
+.followers{
+    font-size: 12px;
+    font-weight: 400;
+    color: #63687D;
+}
+.percent{
+    color: #1EB589;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: 30px;
+}
+
+/* new table */
+#mainTable{
+    margin-top: 5%;
+}
+.tableRow{
+    /* border: 1px black solid; */
+    margin-bottom: 3%;
+}
+.rowDiv1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* border: 1px black solid; */
+    margin: 3%;
+}
+.rowDiv2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    text-align: center;
+}
+.rowDiv2{
+    /* border: 1px black solid; */
+    background-color: #F1F3FA;
+    border-radius: 3%;
+    height: 125px;
+    width: 255px;
+}
+.rowDiv2:hover{
+    background-color: #E1E4F0;
+}
+.rowDiv2 img{
+    align-self: center;
+    margin-left: 40%;
+}
+.dark-mode .rowDiv2{
+    background-color: #252B42;
+    color: #ffff;
+}
+.dark-mode .rowDiv2:hover{
+    background-color: #333A55;
+}
+
+#titleP{
+    align-self: center;
+    font-size: 16px;
+    font-weight: 700;
+    color: #63687D;
+}
+#titleTotal{
+    font-size: 32px;
+    font-weight: 700;
+}
+#percentToday{
+    align-self: center;
+    margin-right: 30%;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+
+.dark-mode{
+    background-color: #20222F;
+}
+.dark-mode h1{
+    color: white;
+}
+
+
+
+
+
+/* table */ 
+/* #mainTable{
+    margin-top: 8%;
+}
+#table1{
+    border-spacing: 45px;
+}
+.tableData{
+    height: 125px;
+    width: 255px;
+    padding: 7px;
+    border: 1px black solid;
+    border-radius: 2%;
+    background-color: #F1F3FA;
+
+}
+.tableDivs{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    border: 1px black solid;
+    width: 220px;
+    height: 40px;
+    margin: 5%;
+    margin-left: 7%;
+} */
+
+
+
+
+@media screen and (max-width: 600px) {
+   
+
+    #dashBoards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .dashDivs{
+        margin-bottom: 5%;
+        width: 326px;
+        height: 216px;
+    }
+    h3{
+        margin-left: 15%;
+    }
+   
+   .tableRow{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-bottom: 3%;
+   }
+
+   .rowDiv1{
+    display: flex;
+    flex-direction: column;
+    margin-top: 0%;
+   }
+    .rowDiv2{
+        width: 326px;
+        height: 125px;
+        margin-bottom: 5%;
+    }
+
+    
+}
